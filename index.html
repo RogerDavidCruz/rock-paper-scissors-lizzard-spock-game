@@ -1,0 +1,27 @@
+<!-- Morning Challenge - Rock, Paper, Scissors, Lizard, Spock using es6 and served by a simple node server (http module), no peaking at your past R,P,S code and push to Github. You will have under 90mins. Get as far as you can! -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title></title>
+  </head>
+  <body>
+    <h1>Rock, Paper, Scissors, Lizard, Spock Challenge</h1>
+    <h2>Select your choice against the computer</h2>
+    <form class="test" id="parent" action="index.html" method="post">
+      <button class="rock" type="button" name="button" value="rock">rock</button>
+      <button class="paper" type="button" name="button" value="paper">paper</button>
+      <button class="scissors" type="button" name="button" value="scissor">scissor</button>
+      <button class="lizard" type="button" name="button" value="lizard">lizard</button>
+      <button class="spock" type="button" name="button" value="spock">spock</button>
+    </form>
+    <p>Your Selection: <span id="humanChoice"></span></p>
+    <p>Computer Selects: <span id="computerChoice"></span></p>
+    <p>Win or Loss Outcome: <span id="winOrLose"></span></p>
+
+    <script type="text/javascript" src="js/client.js"></script>
+    <script type="text/javascript" src="server.js"></script>
+  </body>
+</html>
