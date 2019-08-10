@@ -1,9 +1,11 @@
-// const http = request('http')
-// const fs = request('fs')
-//
-// var hostname = '107.'...
-//
-// let server = createServer()...
-// writeHead()
-// write()
-// end()
+const express = require('express');
+const app = express();
+app.use(express.static('public'))
+
+app.listen(3000, function() {
+  console.log('listening on 3000')
+})
+
+app.get('/', (req, res) => {
+  res.sendFile(__dirname + '/index.html')
+})
